@@ -160,7 +160,8 @@ ul{
   padding: 0 30px;
 
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+  grid-template-columns: repeat(3, 300px);
   background-color: #ADADAD;
   padding: 10px;
   align-items: center;
@@ -176,8 +177,6 @@ ul{
   border-radius: 10px;
   box-shadow: 0 3px 5px rgba(0,0,0,0.6);
 }
-
-
 
 
 
@@ -220,29 +219,38 @@ ul{
     text-align: center;
   }
 
+  .grid-container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   
 }
 
-@media screen and (max-width: 558px){
+@media screen and (max-width: 480px){
   
 
   .header .container{
     /* display: block; */
     flex-direction: column;
-    align-items: start;
-    
+    align-items: start;    
   }
 
   .header ul{
     /* display: block; */
-    flex-direction: column;
-    
-    
+    flex-direction: column;   
   }
 
-  .header{
-    
+  .header{ 
     height: 120px;
+  }
+
+  .grid-container{
+    grid-template-columns: 1fr;
+  }
+
+  .jumbotron img{
+    max-width: 80vw;
+    
   }
 
   
