@@ -128,6 +128,16 @@ ul{
 }
 
 /* Products */
+
+.boxes{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.boxes h2{
+  margin-top: 40px;
+}
 .boxes .container{
   display: flex;
   justify-content: space-between;
@@ -169,8 +179,12 @@ ul{
 }
 .grid-item {
   padding: 20px;
-  
+  background-color: #B1A296;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.6);
 }
+
 
 .grid-item img{
   width: 100%;
