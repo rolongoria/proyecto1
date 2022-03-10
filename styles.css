@@ -87,6 +87,7 @@ ul{
 
 .jumbotron img{
   max-width: 500px;
+  transform: scaleX(-1);
   
 }
 
@@ -100,7 +101,7 @@ ul{
 .jumbotron input[type=text]{
   width: 80%;
   padding: 14px 20px;
-  margin: 8px 0;
+  margin: 50px 0;
   display: inline-block;
   border: 1px solid #ccc;
   box-shadow: 0 3px 5px rgba(0,0,0,0.6);
@@ -115,7 +116,7 @@ ul{
   
   color: white;
   padding: 14px 0px;
-  margin: 8px 0;
+  margin: 50px 0;
   
   border: none;
   border-radius: 4px;
@@ -237,6 +238,12 @@ ul{
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .jumbotron img{
+    max-width: 300px;
+    
+  }
+
+  
   
 }
 
@@ -263,8 +270,16 @@ ul{
   }
 
   .jumbotron img{
-    max-width: 80vw;
+    display: none;
     
+  }
+
+  .jumbotron input[type=text]{
+    margin: 30px 0;
+  }
+
+  .jumbotron input[type=submit] {
+    margin: 30px 0;
   }
 
   
